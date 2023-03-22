@@ -102,3 +102,68 @@ textarea {
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+/* * HEADER */
+.header {
+  padding: var(--separacion) 0;
+  color: var(--color-claro);
+  background-color: var(--color-oscuro);
+}
+
+@media (min-width:768px) {
+  .header {
+    padding: calc(var(--separacion) *2) 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .header {
+    padding: calc(var(--separacion) *3) 0;
+  }
+}
+
+.header__content {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .header__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    text-align: left;
+  }
+}
+
+.header__img {
+  margin: 0 auto;
+}
+
+.header__sonido {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.header__title {
+  font-size: 6rem;
+  margin: 0;
+}
+
+@media (min-width:768px) {
+  .header__title {
+    font-size: 10rem;
+  }
+}
+
+.header__precio span {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+@media (min-width:768px) {
+  .header__precio span {
+    font-size: 6rem;
+  }
+}
