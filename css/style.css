@@ -442,3 +442,18 @@ textarea {
   color: var(--color-claro);
   background-color: var(--color-principal);
 }
+
+/* * Footer */
+.footer {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-principal);
+  font-family: var(--fuente-heading);
+}
+
+@media (min-width:768px) {
+  .footer {
+    padding: 2rem;
+  }
+}
