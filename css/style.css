@@ -167,3 +167,31 @@ textarea {
     font-size: 6rem;
   }
 }
+
+/* * ICONOS */
+.iconos {
+  padding: var(--separacion);
+  display: grid;
+  gap: 5rem;
+}
+
+@media (min-width:768px) {
+  .iconos {
+    padding: calc(var(--separacion) * 2) var(--separacion);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  text-align: center;
+}
+
+.icono__titulo {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--color-principal);
+}
