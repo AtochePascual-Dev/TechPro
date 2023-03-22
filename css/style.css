@@ -195,3 +195,69 @@ textarea {
   text-transform: uppercase;
   color: var(--color-principal);
 }
+
+/* * TECHPRO */
+.techpro {
+  padding: var(--separacion) 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%, 75rem;
+  background-position: 100%, top right;
+}
+
+@media (min-width:768px) {
+  .techpro {
+    background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.jpg');
+    background-size: 100%, 90rem;
+    background-repeat: no-repeat;
+    background-position: 100%, top right;
+  }
+}
+
+@media (min-width:1600px) {
+  .techpro {
+    background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.jpg');
+    background-size: cover, 128rem;
+    background-repeat: no-repeat;
+    background-position: 100%, top right;
+  }
+}
+
+.techpro__content {
+  display: grid;
+  grid-template-rows: repeat(2, 35rem);
+  gap: 5rem;
+}
+
+@media (min-width:768px) {
+  .techpro__content {
+    grid-template-rows: unset;
+    row-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.techpro__texto {
+  padding: 0 2rem;
+  grid-row: 2 / 3;
+  color: var(--color-claro);
+}
+
+@media (min-width:768px) {
+  .techpro__texto {
+    padding: var(--separacion) 2rem;
+  }
+}
+
+.techpro__titulo {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.techpro__titulo span {
+  font-weight: 900;
+}
+
+.techpro__descripcion {
+  line-height: 2;
+}
