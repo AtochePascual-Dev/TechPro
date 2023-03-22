@@ -359,3 +359,86 @@ textarea {
   font-size: 4rem;
   font-weight: 900;
 }
+
+/* * NESLETTER */
+.nesletter {
+  padding: var(--separacion) 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover, 78rem;
+  background-position: 100%, top center;
+}
+
+@media (min-width:768px) {
+  .nesletter {
+    background: linear-gradient(to right, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover, 75rem;
+    background-position: 100%, top left;
+  }
+}
+
+@media (min-width:1600px) {
+  .nesletter {
+    background: linear-gradient(to right, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover, 130rem;
+    background-position: 100%, top left;
+  }
+}
+
+.nesletter__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+@media (min-width:768px) {
+  .nesletter__content {
+    grid-template-rows: unset;
+    row-gap: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.nesletter__descripcion {
+  grid-row: 2 / 3;
+}
+
+@media (min-width:768px) {
+  .nesletter__descripcion {
+    grid-column: 2 / 3;
+  }
+}
+
+.nesletter__titulo {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  line-height: 1;
+}
+
+@media (min-width:768px) {
+  .nesletter__titulo {
+    font-size: 3.6rem;
+  }
+}
+
+.formulario {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__input {
+  padding: 1rem;
+  border: 1px solid var(--color-gris-claro);
+}
+
+.formulario__btn {
+  padding: 1rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--color-claro);
+  background-color: var(--color-principal);
+}
