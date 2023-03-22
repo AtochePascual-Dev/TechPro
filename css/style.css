@@ -197,7 +197,7 @@ textarea {
 }
 
 /* * TECHPRO */
-.techpro {
+.notavif.notwebp .techpro {
   padding: var(--separacion) 0;
   background: linear-gradient(to bottom, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.jpg');
   background-repeat: no-repeat;
@@ -205,9 +205,39 @@ textarea {
   background-position: 100%, top right;
 }
 
+.webp .techpro {
+  padding: var(--separacion) 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.webp');
+  background-repeat: no-repeat;
+  background-size: 100%, 75rem;
+  background-position: 100%, top right;
+}
+
+.avif .techpro {
+  padding: var(--separacion) 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.avif');
+  background-repeat: no-repeat;
+  background-size: 100%, 75rem;
+  background-position: 100%, top right;
+}
+
 @media (min-width:768px) {
-  .techpro {
+  .notavif.notwebp .techpro {
     background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.jpg');
+    background-size: 100%, 90rem;
+    background-repeat: no-repeat;
+    background-position: 100%, top right;
+  }
+
+  .webp .techpro {
+    background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.webp');
+    background-size: 100%, 90rem;
+    background-repeat: no-repeat;
+    background-position: 100%, top right;
+  }
+
+  .avif .techpro {
+    background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.avif');
     background-size: 100%, 90rem;
     background-repeat: no-repeat;
     background-position: 100%, top right;
@@ -215,8 +245,22 @@ textarea {
 }
 
 @media (min-width:1600px) {
-  .techpro {
+  .notavif.notwebp .techpro {
     background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.jpg');
+    background-size: cover, 128rem;
+    background-repeat: no-repeat;
+    background-position: 100%, top right;
+  }
+
+  .webp .techpro {
+    background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.webp');
+    background-size: cover, 128rem;
+    background-repeat: no-repeat;
+    background-position: 100%, top right;
+  }
+
+  .avif .techpro {
+    background: linear-gradient(to left, transparent 50%, var(--color-principal) 0%), url('../img/imagen-mujer.avif');
     background-size: cover, 128rem;
     background-repeat: no-repeat;
     background-position: 100%, top right;
@@ -361,7 +405,7 @@ textarea {
 }
 
 /* * NESLETTER */
-.nesletter {
+.notavif.notwebp .nesletter {
   padding: var(--separacion) 0;
   background: linear-gradient(to bottom, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.jpg');
   background-repeat: no-repeat;
@@ -369,9 +413,39 @@ textarea {
   background-position: 100%, top center;
 }
 
+.webp .nesletter {
+  padding: var(--separacion) 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.webp');
+  background-repeat: no-repeat;
+  background-size: cover, 78rem;
+  background-position: 100%, top center;
+}
+
+.avif .nesletter {
+  padding: var(--separacion) 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.avif');
+  background-repeat: no-repeat;
+  background-size: cover, 78rem;
+  background-position: 100%, top center;
+}
+
 @media (min-width:768px) {
-  .nesletter {
+  .notavif.notwebp .nesletter {
     background: linear-gradient(to right, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover, 75rem;
+    background-position: 100%, top left;
+  }
+
+  .webp .nesletter {
+    background: linear-gradient(to right, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.webp');
+    background-repeat: no-repeat;
+    background-size: cover, 75rem;
+    background-position: 100%, top left;
+  }
+
+  .avif .nesletter {
+    background: linear-gradient(to right, transparent 50%, var(--color-claro) 0%), url('../img/newsletter.avif');
     background-repeat: no-repeat;
     background-size: cover, 75rem;
     background-position: 100%, top left;
