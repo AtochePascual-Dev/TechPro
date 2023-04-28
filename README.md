@@ -25,4 +25,4 @@ No se ha recibido contribuciones hasta este momento.
 
 ## preview
 
-![](https://i.imgur.com/qMeiRus.png)
+![](https://i.imgur.com/ZH8GiO6.png)
